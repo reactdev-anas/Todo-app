@@ -94,27 +94,45 @@ function Todos() {
         <div className='todos'>
         {todos.map((todo)=>(
           <p key={todo.id}
-          style={{textDecoration:todo.completed? 'line-through':'none'}}>
+          style={{textDecoration:todo.completed? 'line-through':'none', background: theme == 'light' ?  'transparent' : 'transparent',}}>
             {editTodoid===todo.id?(
               <>
               <input type='text' 
               value={editTodoText} 
               onChange={(e)=>setEditTodoText(e.target.value)}
               />
-              <Button variant="contained" color='secondary' size='small' onClick={saveEdit}>
+              <Button style={{
+            background: theme == 'light' ?  '#9c27b0' : 'transparent',
+            border: theme == 'light' ? 'none' : '1px solid #ffff',
+            color: theme == 'light' ? '#ffff' : '#ffff'
+          }}
+                variant="contained" color='secondary' size='small' onClick={saveEdit}>
             save
           </Button>
               </>
               ) : (
                 <>
-             <span className='text'>{todo.text}</span> 
+             <span  style={{
+            color: theme == 'light' ? '#000' : '#ffff'
+          }}
+               className='text'>{todo.text}</span> 
               <input type="checkbox" 
                checked={todo.completed}
                 onChange={()=> markcomplete (todo.id)}/>
-               <Button variant="contained" color='secondary' size='small' onClick={()=>editTodo(todo.id)}>
+               <Button style={{
+            background: theme == 'light' ?  '#9c27b0' : 'transparent',
+            border: theme == 'light' ? 'none' : '1px solid #ffff',
+            color: theme == 'light' ? '#ffff' : '#ffff'
+          }} 
+                 variant="contained" color='secondary' size='small' onClick={()=>editTodo(todo.id)}>
             Edit
           </Button>
-          <Button variant="contained"  color='secondary' size='small' onClick={()=>deleteTodo(todo.id)}>
+          <Button  style={{
+            background: theme == 'light' ?  '#9c27b0' : 'transparent',
+            border: theme == 'light' ? 'none' : '1px solid #ffff',
+            color: theme == 'light' ? '#ffff' : '#ffff'
+          }} 
+            variant="contained"  color='secondary' size='small' onClick={()=>deleteTodo(todo.id)}>
             Delete
           </Button>
               
