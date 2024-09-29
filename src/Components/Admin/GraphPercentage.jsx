@@ -28,7 +28,7 @@ function GraphPercentage() {
   return (
     <div className="graph-2">
       <h3>Graph of Percentage of Completed Tasks by Individual Users</h3>
-      <PieChart width={550} height={400}>
+      <PieChart className='pie-chart' width={550} height={400}>
         <Pie
           data={data}
           cx="50%"
