@@ -366,6 +366,70 @@ margin-top: 10px;
   color: #d500f9; 
 }
 
-.graph-2 h4{
-  text-align: center;
+
+
+@media only screen and (max-width: 600px){
+  .container-home {
+    width: 90%;
+    height: 500px;
+   
+  }
+  .cards {
+    width: 100%;
+    flex-direction:column;
+    align-items:center;
+  }
+  .cards .box-1 {
+    width: 250px;
+    height: 200px;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  .cards .user-todos {
+    width: 280px;
+    height: auto;
+    
+  }
+  .todos p {
+    background-color: transparent;
+  }
+  .graphs{
+    width:100%;
+    flex-direction:column;
+    padding: 0px ;
+    margin-top: 40px;
+    overflow:hidden !important
+  }
+  .graph-uv h3{
+    margin-top:0px;
+    margin-left:10px !important;
+  }
+  .graph h3{
+    font-size:17px;
+    margin-left:5px;
+  }
+  .graph-2{
+    width:100%;
+  }
+  .bar-chart{
+    width:100% !important;
+  }
+  .graph-2 h3{
+    font-size:17px;
+    margin-inline:5px;
+  }
+  .date-picker h2{
+    font-size:16px
+  }
+  .indian-time h2{
+    font-size:16px
+  }
+  .USA-time h2{
+    font-size:16px
+  }
+  .pie-chart{
+    width:100% !important;
+  }
 }
+
+ 
