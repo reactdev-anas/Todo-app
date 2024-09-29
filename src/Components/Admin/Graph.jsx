@@ -51,6 +51,7 @@ function Graph() {
           left: 20,
           bottom: 5,
         }}
+         className='bar-chart'
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
