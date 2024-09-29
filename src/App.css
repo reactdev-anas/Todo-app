@@ -315,7 +315,9 @@ margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center
 }
-
+.user{
+  margin-top:15px;
+}
 
 .todos-list h3 {
   width: 100%;
