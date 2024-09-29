@@ -138,7 +138,7 @@ function Admin() {
               </div>
             ))
           ) : (
-            <h4>No users found</h4>
+            <h4 className='user'>No users found</h4>
           )}
         </div>
       </div>
